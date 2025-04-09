@@ -7,8 +7,9 @@ import prettier from "eslint-config-prettier";
 
 export default defineConfig([
   prettier,
-  tseslint.configs.recommended,
-  { files: ["**/*.{js,mjs,cjs,ts,jsx,tsx}"], plugins: { js }, extends: ["js/recommended"] },
+  js.configs.recommended,
+  tseslint.configs.strict,
+  tseslint.configs.stylistic,
   {
     files: ["**/client/**/*.tsx"],
     plugins: [pluginReact],

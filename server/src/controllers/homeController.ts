@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction } from "express";
-import * as homeService from "services/homeService";
+import * as homeService from "@services/homeService";
 
 export const getHelloWorld = (
   req: Request,

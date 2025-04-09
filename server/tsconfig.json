@@ -6,8 +6,14 @@
       "module": "CommonJS",
       "target": "ES2024",
       "noEmit": false,
-      "baseUrl": "./src"
+      "baseUrl": "./",
+      "paths": {
+        "@/*": ["src/*"], 
+        "@controllers/*": ["src/controllers/*"],
+        "@routes/*": ["src/routes/*"],
+        "@services/*": ["src/services/*"],
+      },
     },
-    "include": ["src"],
+    "include": ["./src/**/*.ts"],
     "exclude": ["node_modules", "dist"]
   }
