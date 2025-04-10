@@ -2,7 +2,7 @@
     "extends": "../tsconfig.json",
     "compilerOptions": {
       "outDir": "dist",
-      "rootDir": "src",
+      "rootDir": "../",
       "module": "CommonJS",
       "target": "ES2024",
       "noEmit": false,
@@ -12,6 +12,7 @@
         "@controllers/*": ["src/controllers/*"],
         "@routes/*": ["src/routes/*"],
         "@services/*": ["src/services/*"],
+        "@shared/*": ["../shared/*"]
       },
     },
     "include": ["./src/**/*.ts"],
