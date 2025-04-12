@@ -12,9 +12,12 @@
         "@controllers/*": ["src/controllers/*"],
         "@routes/*": ["src/routes/*"],
         "@services/*": ["src/services/*"],
-        "@shared/*": ["../shared/*"]
+        "@shared/*": ["../shared/*"],
+        "@middlewares/*": ["src/middlewares/*"],
+        "@types/*": ["src/types/*"],
+        "@utils/*": ["src/utils/*"]
       },
     },
-    "include": ["./src/**/*.ts"],
+    "include": ["./src/**/*.ts", "../shared/*"],
     "exclude": ["node_modules", "dist"]
   }

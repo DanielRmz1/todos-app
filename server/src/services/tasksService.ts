@@ -1,9 +1,9 @@
 import TaskModel from "@/models/taskModel";
-import Task from "@shared/task";
+import Task from "@shared/tasks";
 
 export const getAllTasks = async (): Promise<Task[]> => {
-    return TaskModel.find().exec();
-}
+	return TaskModel.find().exec();
+};
 
 export const createTask = async (data: Task): Promise<Task> => {
   const task = new TaskModel(data);
