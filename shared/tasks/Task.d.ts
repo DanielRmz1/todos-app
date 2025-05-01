@@ -2,6 +2,7 @@ import Priority from "./Priority.enum";
 import Status from "./Status.enum";
 
 interface Task {
+	id: string;
 	userId: string;
 	title: string;
 	description: string;

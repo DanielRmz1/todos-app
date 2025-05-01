@@ -12,7 +12,17 @@
 	"arrowParens": "always",
 	"endOfLine": "lf",
 	"singleAttributePerLine": false,
-	"importOrder": ["^@core/(.*)$", "^@server/(.*)$", "^@client/(.*)$", "^[./]"],
-	"importOrderSeparation": true,
-	"importOrderSortSpecifiers": true
+    "plugins": ["@trivago/prettier-plugin-sort-imports"],
+    "importOrder": [
+        "<THIRD_PARTY_MODULES>",
+        "^[./]",
+        "^@shared/(.*)$",
+        "^@utils/(.*)$",
+        "^@middlewares/(.*)$",
+        "^@services/(.*)$",
+        "^@controllers/(.*)$",
+        "^@routes/(.*)$",
+        "^@/types/(.*)$"
+    ],
+	"importOrderParserPlugins": ["typescript", "jsx"]
 }
