@@ -1,18 +1,20 @@
 {
-  "name": "todo-app",
-  "version": "1.0.0",
-  "private": true,
-  "scripts": {
-    "lint": "eslint"
-  },
-  "devDependencies": {
-    "@eslint/js": "^9.24.0",
-    "@trivago/prettier-plugin-sort-imports": "^5.2.2",
-    "@types/node": "^22.14.0",
-    "eslint": "^9.24.0",
-    "eslint-config-prettier": "^10.1.1",
-    "eslint-plugin-react": "^7.37.5",
-    "globals": "^16.0.0",
-    "typescript-eslint": "^8.29.1"
-  }
+	"name": "todo-app",
+	"version": "1.0.0",
+	"private": true,
+	"scripts": {
+		"lint": "eslint",
+		"dev": "concurrently \"npm --prefix server run dev\" \"npm --prefix client run dev\""
+	},
+	"devDependencies": {
+		"@eslint/js": "^9.24.0",
+		"@trivago/prettier-plugin-sort-imports": "^5.2.2",
+		"@types/node": "^22.14.0",
+		"concurrently": "^9.1.2",
+		"eslint": "^9.24.0",
+		"eslint-config-prettier": "^10.1.1",
+		"eslint-plugin-react": "^7.37.5",
+		"globals": "^16.0.0",
+		"typescript-eslint": "^8.29.1"
+	}
 }

@@ -11,7 +11,7 @@ export default defineConfig([
   tseslint.configs.strict,
   tseslint.configs.stylistic,
   {
-    files: ["**/client/**/*.tsx"],
+    files: ["./client/**/*.tsx"],
     plugins: [pluginReact],
     settings: {
       react: {
@@ -24,7 +24,7 @@ export default defineConfig([
     }
   },
   {
-    files: ["**/server/**/*.ts"],
+    files: ["./server/**/*.ts"],
     languageOptions: {
       globals: globals.node
     }
