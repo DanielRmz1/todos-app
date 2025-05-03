@@ -1,0 +1,6 @@
+// .vscode/settings.json
+{
+  "eslint.useFlatConfig": true,
+  "eslint.validate": ["javascript", "typescript", "typescriptreact"],
+  "eslint.enable": true
+}

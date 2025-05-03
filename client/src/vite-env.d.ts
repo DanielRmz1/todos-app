@@ -9,6 +9,7 @@ interface ViteTypeOptions {
 
 interface ImportMetaEnv {
 	readonly VITE_PORT: number;
+	readonly VITE_SERVER_URL: string;
 }
 
 interface ImportMeta {
